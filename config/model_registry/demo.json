@@ -1,0 +1,6 @@
+{
+  "transaction_anomaly": {"adapter": "DemoTransactionAnomalyAdapter", "version": "demo-anomaly-1.4.0", "preprocessing_version": "demo-txn-prep-1.1.0"},
+  "evidence_verification": {"adapter": "DemoEvidenceVerificationAdapter", "version": "demo-evidence-1.2.0", "preprocessing_version": "demo-doc-prep-1.0.0"},
+  "control_classifier": {"adapter": "DemoControlClassifierAdapter", "version": "demo-control-2.0.0", "preprocessing_version": "demo-control-prep-1.0.0"},
+  "audit_conclusion": {"adapter": "RuleBasedConclusionAdapter", "version": "demo-conclusion-1.0.0", "preprocessing_version": "n/a"}
+}

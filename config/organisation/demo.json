@@ -1,0 +1,8 @@
+{
+  "organisation_id": "demo-finance",
+  "name": "Northstar Finance Group",
+  "currency": "USD",
+  "enabled_modules": ["anomaly", "evidence", "control", "conclusion"],
+  "risk_thresholds": {"high": 0.8, "medium": 0.5},
+  "control_classes": ["PASS", "MISSING_EVIDENCE", "MISSING_APPROVAL", "LATE_APPROVAL", "POLICY_VIOLATION", "THRESHOLD_BYPASS", "DATA_MISMATCH", "DUPLICATE_TRANSACTION", "REVIEW_REQUIRED"]
+}

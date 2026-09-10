@@ -1,0 +1,13 @@
+{
+  "source_name": "demo-ledger-export",
+  "canonical_fields": {
+    "transaction_id": "txn_no",
+    "timestamp": "date_time",
+    "amount": "transaction_value",
+    "currency": "curr",
+    "account": "gl_account",
+    "vendor": "supplier_code",
+    "department": "business_unit",
+    "category": "expense_type"
+  }
+}
