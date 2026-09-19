@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>AuditFlow — AI Audit & Control Verification</title>
+    <link rel="stylesheet" href="/app/styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">A</div>
+        <div>AuditFlow<span>AI Audit & Control Verification</span></div>
+      </div>
+      <nav>
+        <a class="active" href="#dashboard"><i>▦</i> Overview</a
+        ><a href="#cases"><i>◈</i> Audit cases <b>42</b></a
+        ><a href="#transactions"><i>⌁</i> Transactions</a
+        ><a href="#controls"><i>✓</i> Controls</a
+        ><a href="#evidence"><i>▤</i> Evidence</a
+        ><a href="#models"><i>◌</i> Model registry</a
+        ><a href="#reports"><i>▧</i> Reports</a>
+      </nav>
+      <div class="side-foot">
+        <small>Organisation</small><strong>NLL Finance Group</strong
+        ><span class="env"><em></em> Demo environment</span>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div class="crumb">Risk operations <span>/</span> Continuous audit</div>
+        <div class="head-actions">
+          <button class="icon-btn">?</button><button class="icon-btn">♧</button>
+          <div class="avatar">AR</div>
+          <div><strong>Ronak Parmar</strong><small>Junior Auditor</small></div>
+        </div>
+      </header>
+      <section id="dashboard" class="view">
+        <div class="page-title">
+          <div>
+            <p class="eyebrow">OVERVIEW</p>
+            <h1>Audit intelligence, made accountable.</h1>
+            <p>
+              Monitor financial risk, control performance and review activity
+              across your organisation.
+            </p>
+          </div>
+          <button class="primary">+ Create audit case</button>
+        </div>
+        <div class="metrics" id="metrics"></div>
+        <div class="grid-two">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Exceptions over time</h2>
+                <p>Weekly exceptions identified by automated review</p>
+              </div>
+              <select>
+                <option>Last 8 weeks</option>
+              </select>
+            </div>
+            <div class="chart-wrap">
+              <div class="y-labels">
+                <span>30</span><span>20</span><span>10</span><span>0</span>
+              </div>
+              <div class="line-chart">
+                <div class="gridline"></div>
+                <div class="gridline"></div>
+                <div class="gridline"></div>
+                <svg viewBox="0 0 700 210" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                      <stop stop-color="#5c6ac4" stop-opacity=".25" />
+                      <stop offset="1" stop-color="#5c6ac4" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M0 158 L100 145 L200 157 L300 89 L400 116 L500 54 L600 103 L700 37 L700 210 L0 210Z"
+                    fill="url(#area)"
+                  />
+                  <path
+                    d="M0 158 L100 145 L200 157 L300 89 L400 116 L500 54 L600 103 L700 37"
+                    fill="none"
+                    stroke="#5764ba"
+                    stroke-width="3"
+                  />
+                  <g fill="#fff" stroke="#5764ba" stroke-width="3">
+                    <circle cx="0" cy="158" r="4" />
+                    <circle cx="100" cy="145" r="4" />
+                    <circle cx="200" cy="157" r="4" />
+                    <circle cx="300" cy="89" r="4" />
+                    <circle cx="400" cy="116" r="4" />
+                    <circle cx="500" cy="54" r="4" />
+                    <circle cx="600" cy="103" r="4" />
+                    <circle cx="700" cy="37" r="4" />
+                  </g>
+                </svg>
+                <div class="x-labels">
+                  <span>Jul 21</span><span>Jul 28</span><span>Aug 04</span
+                  ><span>Aug 11</span><span>Aug 18</span><span>Aug 25</span
+                  ><span>Sep 01</span><span>Sep 08</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Control failure categories</h2>
+                <p>Open exceptions by classification</p>
+              </div>
+              <button class="link">View controls →</button>
+            </div>
+            <div class="bar-list">
+              <div>
+                <span>Missing approval</span><b><i style="width: 86%"></i></b
+                ><strong>12</strong>
+              </div>
+              <div>
+                <span>Missing evidence</span><b><i style="width: 64%"></i></b
+                ><strong>9</strong>
+              </div>
+              <div>
+                <span>Policy violation</span><b><i style="width: 43%"></i></b
+                ><strong>6</strong>
+              </div>
+              <div>
+                <span>Data mismatch</span><b><i style="width: 35%"></i></b
+                ><strong>5</strong>
+              </div>
+              <div>
+                <span>Duplicate transaction</span
+                ><b><i style="width: 22%"></i></b><strong>3</strong>
+              </div>
+            </div>
+            <div class="model-status">
+              <span><em></em> All enabled models operational</span
+              ><a href="#models">View registry</a>
+            </div>
+          </article>
+        </div>
+        <div class="grid-two lower">
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Risk by department</h2>
+                <p>High and medium-risk cases currently open</p>
+              </div>
+            </div>
+            <div class="dept">
+              <div>
+                <span>Operations</span><b><i style="width: 80%"></i></b
+                ><strong>14</strong>
+              </div>
+              <div>
+                <span>Procurement</span><b><i style="width: 62%"></i></b
+                ><strong>11</strong>
+              </div>
+              <div>
+                <span>Technology</span><b><i style="width: 43%"></i></b
+                ><strong>8</strong>
+              </div>
+              <div>
+                <span>Finance</span><b><i style="width: 30%"></i></b
+                ><strong>5</strong>
+              </div>
+            </div>
+          </article>
+          <article class="panel queue">
+            <div class="panel-head">
+              <div>
+                <h2>Priority review queue</h2>
+                <p>Cases requiring a human decision</p>
+              </div>
+              <a class="link" href="#cases">View all →</a>
+            </div>
+            <div class="queue-item">
+              <span class="risk high">HIGH</span>
+              <div>
+                <strong>AC-2026-004182</strong
+                ><small>Orion Strategic Supplies · $148,500</small>
+              </div>
+              <button onclick="openCase()">Review</button>
+            </div>
+            <div class="queue-item">
+              <span class="risk medium">MED</span>
+              <div>
+                <strong>AC-2026-004176</strong
+                ><small>Northline Logistics · $72,400</small>
+              </div>
+              <button>Review</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="case-view" class="view hidden">
+        <div class="case-top">
+          <button class="back" onclick="closeCase()">← Back to overview</button>
+          <div class="case-actions">
+            <button class="secondary" onclick="decide('REVIEW_REQUIRED')">
+              Send for review</button
+            ><button class="secondary" onclick="decide('FAIL')">Reject</button
+            ><button class="primary" onclick="decide('PASS')">Approve</button>
+          </div>
+        </div>
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">AUDIT CASE <span>AC-2026-004182</span></p>
+            <h1>Transaction review</h1>
+            <p>Created by continuous audit monitoring · 09 Sep 2026, 09:41</p>
+          </div>
+          <span class="status review">REVIEW REQUIRED</span>
+        </div>
+        <div class="process">
+          <div class="done">1<span>Transaction</span></div>
+          <hr />
+          <div class="done">2<span>AI prediction</span></div>
+          <hr />
+          <div class="done">3<span>Evidence</span></div>
+          <hr />
+          <div class="done">4<span>Control assessment</span></div>
+          <hr />
+          <div class="active-step">5<span>Human review</span></div>
+          <hr />
+          <div>6<span>Final decision</span></div>
+        </div>
+        <div class="case-layout">
+          <div>
+            <article class="panel info-card">
+              <div class="section-title">
+                <h2>Transaction information</h2>
+                <span class="status high-status">HIGH RISK</span>
+              </div>
+              <div class="tx-grid">
+                <div>
+                  <small>Transaction ID</small><strong>TXN-2026-004182</strong>
+                </div>
+                <div>
+                  <small>Amount</small
+                  ><strong class="amount">$148,500.00 <em>USD</em></strong>
+                </div>
+                <div><small>Date</small><strong>08 Sep 2026</strong></div>
+                <div><small>Department</small><strong>Operations</strong></div>
+                <div>
+                  <small>Vendor</small><strong>Orion Strategic Supplies</strong>
+                </div>
+                <div>
+                  <small>GL account</small
+                  ><strong>6100 · Professional services</strong>
+                </div>
+              </div>
+            </article>
+            <article class="panel result-card">
+              <div class="section-title">
+                <div>
+                  <p class="eyebrow">AI PREDICTION</p>
+                  <h2>Transaction anomaly detection</h2>
+                </div>
+                <span class="status high-status">HIGH-RISK REVIEW</span>
+              </div>
+              <div class="score-row">
+                <div class="score-ring">
+                  <strong>91<small>%</small></strong
+                  ><span>Risk score</span>
+                </div>
+                <div>
+                  <p>
+                    The model identified a transaction pattern that differs
+                    materially from the configured peer group.
+                  </p>
+                  <div class="tags">
+                    <span>Amount vs. peer group</span
+                    ><span>Approval sequence</span>
+                  </div>
+                  <small class="provenance"
+                    >Demo transaction anomaly · v1.4.0 &nbsp;•&nbsp;
+                    Preprocessing v1.1.0 &nbsp;•&nbsp; Confidence 88%</small
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="panel evidence-card">
+              <div class="section-title">
+                <div>
+                  <p class="eyebrow">EVIDENCE REVIEW</p>
+                  <h2>Required control evidence</h2>
+                </div>
+                <button class="link">Inspect documents →</button>
+              </div>
+              <p class="requirement">
+                <strong>Control requirement:</strong> Payments above $100,000
+                require a purchase order, invoice, bank confirmation and two
+                independent approvals before release.
+              </p>
+              <div class="evidence-table">
+                <div class="table-head">
+                  <span>Required evidence</span><span>Status</span
+                  ><span>Verification</span>
+                </div>
+                <div>
+                  <span>Invoice <small>INV-88419.pdf</small></span
+                  ><b class="found">✓ Found</b
+                  ><span>Matched amount & vendor</span>
+                </div>
+                <div>
+                  <span>Purchase Order <small>PO-220188.pdf</small></span
+                  ><b class="found">✓ Found</b><span>Matched transaction</span>
+                </div>
+                <div>
+                  <span>Approval — Level 1 <small>Workflow record</small></span
+                  ><b class="found">✓ Found</b><span>Verified signer</span>
+                </div>
+                <div>
+                  <span>Approval — Level 2</span><b class="missing">× Missing</b
+                  ><span>No independent approval located</span>
+                </div>
+                <div>
+                  <span>Bank Confirmation <small>Payment-9981.pdf</small></span
+                  ><b class="found">✓ Found</b
+                  ><span>Matched payment reference</span>
+                </div>
+              </div>
+            </article>
+            <article class="panel conclusion">
+              <div class="section-title">
+                <div>
+                  <p class="eyebrow">AUDIT CONCLUSION</p>
+                  <h2>Human decision required</h2>
+                </div>
+                <span class="status review">REVIEW REQUIRED</span>
+              </div>
+              <p id="conclusion-text">
+                High-risk review required. The transaction exceeded the
+                configured approval threshold. The invoice was found, but only
+                one of the two required independent approvals was identified.
+                The control has been classified as
+                <strong>MISSING_APPROVAL</strong>. Reviewer confirmation is
+                required before final closure.
+              </p>
+              <div class="conclusion-meta">
+                <div>
+                  <small>Control assessment</small
+                  ><strong>MISSING_APPROVAL</strong>
+                </div>
+                <div>
+                  <small>Conclusion confidence</small><strong>87%</strong>
+                </div>
+                <div>
+                  <small>Decision owner</small><strong>Unassigned</strong>
+                </div>
+              </div>
+              <div class="note">
+                <label for="review-note">Reviewer note</label
+                ><textarea
+                  id="review-note"
+                  placeholder="Add context for your decision…"
+                ></textarea>
+              </div>
+            </article>
+          </div>
+          <aside>
+            <article class="panel control-card">
+              <p class="eyebrow">CONTROL ASSESSMENT</p>
+              <h2>Dual approval for material payments</h2>
+              <p>
+                <strong>What actually happened:</strong> A payment exceeding the
+                configured threshold was released with one verified approval.
+                The second independent approval was not found.
+              </p>
+              <hr />
+              <small>CLASSIFICATION</small
+              ><strong class="violation">MISSING_APPROVAL</strong
+              ><small>Model: Demo control classifier v2.0.0</small>
+            </article>
+            <article class="panel trail">
+              <div class="section-title">
+                <h2>Audit trail</h2>
+                <button class="link">Full history</button>
+              </div>
+              <div id="trail">
+                <div>
+                  <i></i>
+                  <p>
+                    <strong>Control classification completed</strong
+                    ><small>AuditFlow AI · 09:42</small>
+                  </p>
+                </div>
+                <div>
+                  <i></i>
+                  <p>
+                    <strong>Evidence verification completed</strong
+                    ><small>AuditFlow AI · 09:42</small>
+                  </p>
+                </div>
+                <div>
+                  <i></i>
+                  <p>
+                    <strong>Case created</strong><small>System · 09:41</small>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <div id="toast" class="toast"></div>
+    <script src="/app/app.js"></script>
+  </body>
+</html>
